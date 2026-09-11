@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WishWakarma Fabrication | Welding & Fabrication Services</title>
+  <meta name="description" content="Professional metal fabrication, welding, custom fabrication and industrial solutions. Contact WishWakarma Fabrication for your project.">
+  <meta name="keywords" content="fabrication, welding, metal fabrication, industrial fabrication, custom fabrication, WishWakarma Fabrication">
+  <meta name="author" content="WishWakarma Fabrication">
+
+  <meta property="og:title" content="WishWakarma Fabrication">
+  <meta property="og:description" content="Professional Metal Fabrication & Welding Solutions">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #ff6b00;
+      --primary-dark: #d95400;
+      --dark: #101114;
+      --dark-2: #17191d;
+      --card: #202329;
+      --light: #f5f6f8;
+      --text: #20242a;
+      --muted: #69707a;
+      --white: #fff;
+      --border: #30343b;
+      --shadow: 0 15px 40px rgba(0,0,0,.14);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    /* Top bar */
+    .topbar {
+      background: var(--dark);
+      color: #dfe3e8;
+      font-size: .9rem;
+      padding: 9px 0;
+    }
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(16,17,20,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #2a2d32;
+    }
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+    .logo-placeholder {
+      width: 48px;
+      height: 48px;
+      border: 2px dashed var(--primary);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      font-size: .7rem;
+      text-align: center;
+    }
+    .brand span small {
+      display: block;
+      color: #9da3aa;
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+    }
+    nav a {
+      color: #e9eaec;
+      font-weight: 600;
+      font-size: .94rem;
+      transition: .25s;
+    }
+    nav a:hover { color: var(--primary); }
+    .menu-btn {
+      display: none;
+      background: none;
+      color: white;
+      border: 1px solid #3a3e45;
+      padding: 9px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 700px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(8,9,11,.96), rgba(8,9,11,.75), rgba(8,9,11,.55)),
+        radial-gradient(circle at 80% 30%, #4a250e 0, transparent 35%),
+        #111318;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 45px 45px;
+      mask-image: linear-gradient(to bottom, black, transparent);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      max-width: 780px;
+      padding: 80px 0;
+    }
+    .badge {
+      display: inline-block;
+      color: #ffd1ad;
+      background: rgba(255,107,0,.12);
+      border: 1px solid rgba(255,107,0,.45);
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1.03;
+      margin-bottom: 22px;
+    }
+    .hero h1 span { color: var(--primary); }
+    .hero p {
+      color: #c7cbd1;
+      max-width: 680px;
+      font-size: 1.12rem;
+      margin-bottom: 32px;
+    }
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: .25s;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .btn-outline {
+      color: white;
+      border-color: #626871;
+      background: rgba(255,255,255,.03);
+    }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* Sections */
+    section { padding: 90px 0; }
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
+    }
+    .section-head .eyebrow {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 800;
+      font-size: .78rem;
+    }
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 8px 0 12px;
+      color: var(--dark);
+    }
+    .section-head p { color: var(--muted); }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 45px;
+      align-items: center;
+    }
+    .about-text h3 { font-size: 2rem; margin-bottom: 15px; }
+    .about-text p { color: #5f6670; margin-bottom: 16px; }
+    .placeholder-large {
+      min-height: 360px;
+      border-radius: var(--radius);
+      border: 2px dashed #aeb4bc;
+      background: linear-gradient(135deg, #e5e7eb, #cfd3d8);
+      display: grid;
+      place-items: center;
+      color: #60666d;
+      text-align: center;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+    .placeholder-large strong { display: block; font-size: 1.2rem; margin-bottom: 8px; }
+
+    /* Services */
+    .services { background: white; }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .service-card {
+      padding: 30px 24px;
+      background: #fff;
+      border: 1px solid #e4e6e9;
+      border-radius: var(--radius);
+      transition: .3s;
+      box-shadow: 0 8px 25px rgba(0,0,0,.05);
+    }
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: #ffc69f;
+      box-shadow: var(--shadow);
+    }
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: #fff1e7;
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+    }
+    .service-card h3 { margin-bottom: 10px; }
+    .service-card p { color: var(--muted); font-size: .94rem; }
+
+    /* Stats */
+    .stats {
+      padding: 50px 0;
+      background: var(--dark);
+      color: white;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+    .stat h3 { color: var(--primary); font-size: 2.3rem; }
+    .stat p { color: #aeb4bc; }
+
+    /* Why us */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .why-card {
+      background: white;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid #e3e5e8;
+    }
+    .why-card h3 { margin: 10px 0 8px; }
+    .why-card p { color: var(--muted); font-size: .94rem; }
+
+    /* Projects */
+    .projects { background: white; }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .project-card {
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--dark);
+      color: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    }
+    .project-photo {
+      height: 240px;
+      display: grid;
+      place-items: center;
+      background: #d8dadd;
+      color: #646a72;
+      border: 2px dashed #9ba0a7;
+      text-align: center;
+      padding: 20px;
+    }
+    .project-info { padding: 20px; }
+    .project-info h3 { margin-bottom: 5px; }
+    .project-info p { color: #adb3ba; font-size: .9rem; }
+
+    /* Process */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .process-card {
+      text-align: center;
+      position: relative;
+    }
+    .step {
+      width: 54px;
+      height: 54px;
+      margin: 0 auto 16px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      font-weight: 900;
+    }
+    .process-card p { color: var(--muted); font-size: .92rem; }
+
+    /* Testimonials */
+    .testimonials { background: #f0f1f3; }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .testimonial {
+      background: white;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid #e1e3e6;
+    }
+    .stars { color: var(--primary); letter-spacing: 2px; margin-bottom: 12px; }
+    .testimonial p { color: #5f6670; font-style: italic; }
+    .testimonial strong { display: block; margin-top: 18px; }
+
+    /* FAQ */
+    .faq-wrap { max-width: 850px; margin: auto; }
+    .faq-item {
+      background: white;
+      border: 1px solid #e1e3e6;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: white;
+      border: 0;
+      padding: 20px;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 20px 20px;
+      color: var(--muted);
+    }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .plus { transform: rotate(45deg); }
+
+    /* Contact */
+    .contact {
+      background: var(--dark);
+      color: white;
+    }
+    .contact .section-head h2 { color: white; }
+    .contact .section-head p { color: #aeb4bc; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 30px;
+    }
+    .contact-card, .contact-form {
+      background: #1c1f24;
+      border: 1px solid #30343b;
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+    .contact-row {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 23px;
+    }
+    .contact-icon {
+      min-width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,107,0,.13);
+      color: var(--primary);
+    }
+    .contact-row h4 { margin-bottom: 3px; }
+    .contact-row p { color: #aeb4bc; }
+    .contact-row a { color: #f0f1f2; }
+    .contact-row a:hover { color: var(--primary); }
+
+    form { display: grid; gap: 15px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #3a3f46;
+      border-radius: 9px;
+      background: #121419;
+      color: white;
+      font: inherit;
+      outline: none;
+    }
+    input:focus, textarea:focus, select:focus { border-color: var(--primary); }
+    textarea { min-height: 130px; resize: vertical; }
+
+    /* Map placeholder */
+    .map-placeholder {
+      margin-top: 25px;
+      min-height: 180px;
+      border: 2px dashed #51565e;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #9ea4ac;
+      padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0b0c0e;
+      color: #a9afb6;
+      padding: 35px 0 25px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #25282d;
+    }
+    footer h3, footer h4 { color: white; margin-bottom: 10px; }
+    footer p, footer li { font-size: .9rem; margin-bottom: 7px; }
+    footer ul { list-style: none; }
+    footer a:hover { color: var(--primary); }
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      font-size: .82rem;
+    }
+
+    /* Floating WhatsApp */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 1.55rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+      z-index: 999;
+    }
+
+    /* Responsive */
+    @media (max-width: 950px) {
+      .service-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid, .process-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .project-grid, .testimonial-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: var(--dark);
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-top: 1px solid #30343b;
+      }
+      nav ul.open { display: flex; }
+      .menu-btn { display: block; }
+    }
+
+    @media (max-width: 620px) {
+      .topbar-inner { justify-content: center; text-align: center; }
+      section { padding: 65px 0; }
+      .hero { min-height: 620px; }
+      .hero h1 { font-size: 2.65rem; }
+      .service-grid, .project-grid, .testimonial-grid, .why-grid,
+      .stats-grid, .process-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .brand span { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📍 [javaiwadi hanuman mandir tardal,416121, Maharashtra, India]</span>
+      <span>📞 [9921484980] &nbsp; | &nbsp; ✉️ [sutarsanmesh@gmail.com]</span>
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <div class="logo-placeholder">LOGO</div>
+        <span>
+          WishWakarma Fabrication
+          <small>Fabrication • Welding • Industrial Works</small>
+        </span>
+      </a>
+
+      <nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <ul id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge">Professional Fabrication & Welding</span>
+          <h1>Built Strong.<br><span>Made Precisely.</span></h1>
+          <p>
+            Professional metal fabrication, welding and custom industrial solutions
+            for residential, commercial and industrial requirements.
+          </p>
+          <div class="buttons">
+            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+            <a href="#services" class="btn btn-outline">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-head" style="text-align:left; margin:0 0 20px;">
+              <div class="eyebrow">About Us</div>
+              <h2>Reliable fabrication for real-world projects.</h2>
+            </div>
+
+            <h3>[Your Company Tagline]</h3>
+            <p>
+              [Write your company introduction here. Explain when your business
+              started, what type of fabrication work you do and who you serve.]
+            </p>
+            <p>
+              [Add your experience, workshop capabilities, quality commitment,
+              service area and any important business information here.]
+            </p>
+
+            <div class="buttons">
+              <a href="#contact" class="btn btn-primary">Talk to Us</a>
+              <a href="#projects" class="btn" style="border:1px solid #ccc;">View Projects</a>
+            </div>
+          </div>
+
+          <div class="placeholder-large">
+            <div>
+              <strong>WORKSHOP / COMPANY PHOTO</strong>
+              Replace this box with your actual workshop photo.<br>
+              Recommended: 1200 × 900 px
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What We Do</div>
+          <h2>Our Services</h2>
+          <p>Professional fabrication solutions tailored to your project requirements.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">⚙</div>
+            <h3>Custom Fabrication</h3>
+            <p>Custom metal structures and components manufactured according to your requirements.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Welding Work</h3>
+            <p>Professional welding work for repair, fabrication, assembly and structural applications.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏭</div>
+            <h3>Industrial Fabrication</h3>
+            <p>Fabrication solutions for industrial equipment, frames, supports and related applications.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📐</div>
+            <h3>Design & Planning</h3>
+            <p>Project planning and fabrication guidance from concept to finished work.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔩</div>
+            <h3>Installation & Assembly</h3>
+            <p>On-site installation, fitting and assembly support for completed fabrication work.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛠</div>
+            <h3>Repair & Maintenance</h3>
+            <p>Repair, modification and maintenance services for existing metal structures and equipment.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>Residential Work</h3>
+            <p>Custom gates, railings, frames and other metalwork for residential projects.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Commercial Work</h3>
+            <p>Fabrication support for shops, offices, commercial properties and other projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <h3>[00+]</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+          <h3>[00+]</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <h3>[00+]</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3>[00%]</h3>
+          <p>Quality Commitment</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY US ================= -->
+    <section id="why-us">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Our Advantage</div>
+          <h2>Why Choose Us?</h2>
+          <p>Replace these points with your actual business strengths.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="service-icon">✓</div>
+            <h3>Quality Workmanship</h3>
+            <p>Attention to fabrication quality, finishing and project requirements.</p>
+          </article>
+          <article class="why-card">
+            <div class="service-icon">⏱</div>
+            <h3>Timely Delivery</h3>
+            <p>Clear project planning and practical delivery timelines.</p>
+          </article>
+          <article class="why-card">
+            <div class="service-icon">🎯</div>
+            <h3>Precision</h3>
+            <p>Accurate fabrication with focus on dimensions, fit and finish.</p>
+          </article>
+          <article class="why-card">
+            <div class="service-icon">💡</div>
+            <h3>Custom Solutions</h3>
+            <p>Solutions designed around the actual needs of each project.</p>
+          </article>
+          <article class="why-card">
+            <div class="service-icon">₹</div>
+            <h3>Competitive Pricing</h3>
+            <p>Transparent and practical pricing based on project requirements.</p>
+          </article>
+          <article class="why-card">
+            <div class="service-icon">🤝</div>
+            <h3>Customer Support</h3>
+            <p>Communication and support throughout the project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Our Work</div>
+          <h2>Featured Projects</h2>
+          <p>Replace the placeholders below with your real project photos and descriptions.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-photo">PROJECT PHOTO 01<br>Recommended: 1200 × 900 px</div>
+            <div class="project-info">
+              <h3>[Project Name]</h3>
+              <p>[Short project description]</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-photo">PROJECT PHOTO 02<br>Recommended: 1200 × 900 px</div>
+            <div class="project-info">
+              <h3>[Project Name]</h3>
+              <p>[Short project description]</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-photo">PROJECT PHOTO 03<br>Recommended: 1200 × 900 px</div>
+            <div class="project-info">
+              <h3>[Project Name]</h3>
+              <p>[Short project description]</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-photo">PROJECT PHOTO 04<br>Recommended: 1200 × 900 px</div>
+            <div class="project-info">
+              <h3>[Project Name]</h3>
+              <p>[Short project description]</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-photo">PROJECT PHOTO 05<br>Recommended: 1200 × 900 px</div>
+            <div class="project-info">
+              <h3>[Project Name]</h3>
+              <p>[Short project description]</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-photo">PROJECT PHOTO 06<br>Recommended: 1200 × 900 px</div>
+            <div class="project-info">
+              <h3>[Project Name]</h3>
+              <p>[Short project description]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">How It Works</div>
+          <h2>Our Work Process</h2>
+          <p>A simple process from enquiry to completed project.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="step">01</div>
+            <h3>Enquiry</h3>
+            <p>Share your project requirement, dimensions and expected result.</p>
+          </div>
+          <div class="process-card">
+            <div class="step">02</div>
+            <h3>Planning</h3>
+            <p>Discuss material, design, quantity, timeline and estimated cost.</p>
+          </div>
+          <div class="process-card">
+            <div class="step">03</div>
+            <h3>Fabrication</h3>
+            <p>Fabrication, welding, finishing and quality checks are completed.</p>
+          </div>
+          <div class="process-card">
+            <div class="step">04</div>
+            <h3>Delivery</h3>
+            <p>Final product is delivered or installed as agreed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Client Feedback</div>
+          <h2>What Our Clients Say</h2>
+          <p>Replace these sample testimonials with genuine customer reviews.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>“[Add a genuine customer review here.]”</p>
+            <strong>[Customer Name]</strong>
+            <small>[Location / Business]</small>
+          </article>
+
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>“[Add a genuine customer review here.]”</p>
+            <strong>[Customer Name]</strong>
+            <small>[Location / Business]</small>
+          </article>
+
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>“[Add a genuine customer review here.]”</p>
+            <strong>[Customer Name]</strong>
+            <small>[Location / Business]</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-question">
+              What fabrication services do you provide?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-answer">
+              We provide custom fabrication, welding, industrial, residential and commercial metalwork. Replace this answer with your exact services.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you take custom orders?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. Share your dimensions, drawing, reference photo or requirements and we can discuss the project.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Which materials do you work with?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-answer">
+              [List your actual materials here, for example mild steel, stainless steel, aluminium, etc.]
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How can I get a quotation?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-answer">
+              Contact us through phone or WhatsApp and share your project details. Replace this with your actual quotation process.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you provide installation?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-answer">
+              [Yes/No — add your actual installation service information here.]
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Contact Us</div>
+          <h2>Let's Discuss Your Project</h2>
+          <p>Replace all contact placeholders below with your actual business details.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-row">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+910000000000">[+91 XXXXX XXXXX]</a></p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-icon">💬</div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/910000000000" target="_blank">[WhatsApp Number]</a></p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-icon">✉</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:your@email.com">[your@email.com]</a></p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>[Full Business Address]<br>[City, District, Maharashtra, PIN]</p>
+              </div>
+            </div>
+
+            <div class="map-placeholder">
+              📍 GOOGLE MAPS PLACEHOLDER<br>
+              Replace this box with your Google Maps embed.
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3 style="margin-bottom:20px;">Send an Enquiry</h3>
+
+            <!-- This form is visual only until a form backend/service is connected. -->
+            <form id="contactForm">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+              </div>
+
+              <input type="email" name="email" placeholder="Email Address">
+
+              <select name="service">
+                <option value="">Select Service</option>
+                <option>Custom Fabrication</option>
+                <option>Welding Work</option>
+                <option>Industrial Fabrication</option>
+                <option>Repair & Maintenance</option>
+                <option>Other</option>
+              </select>
+
+              <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+
+              <button type="submit" class="btn btn-primary">Send Enquiry</button>
+              <p id="formMessage" style="color:#aeb4bc;font-size:.85rem;"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>WishWakarma Fabrication</h3>
+        <p>[Short company description goes here.]</p>
+        <p>Fabrication • Welding • Industrial Works</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Business Details</h4>
+        <ul>
+          <li>[City, Maharashtra]</li>
+          <li>[+91 XXXXX XXXXX]</li>
+          <li>[your@email.com]</li>
+          <li>[Business Hours]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © <span id="year"></span> WishWakarma Fabrication. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp"
+     href="https://wa.me/910000000000"
+     target="_blank"
+     aria-label="Chat on WhatsApp">☏</a>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+
+    document.querySelectorAll("#navMenu a").forEach(link => {
+      link.addEventListener("click", () => navMenu.classList.remove("open"));
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Demo contact form
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("formMessage").textContent =
+        "Demo form: connect this form to your email/form service before publishing.";
+    });
+  </script>
+
+</body>
+</html>
